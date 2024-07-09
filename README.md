@@ -1,10 +1,12 @@
-# Predicting Flight Prices: Exploring Data and Evaluating ML Algorithms
+# Predicting Flight Prices: Exploring Data and Evaluating ML Algorithms 🛫💸
 Explore our journey through flight price prediction using data analysis and machine learning. Compare algorithms to find the best predictor for your next trip's fare.
 
 ## Table of Contents
 - [Overview](#overview)
 - [Requirements](#requirements)
 - [Technologies Used](#technologies-used)
+- [Data Exploration](#data-exploration)
+- [Model Comparison](#model-comparison)
 
 ## Overview
 This project aims to predict flight prices using various machine learning algorithms. We begin by exploring and analyzing flight data to extract meaningful insights. Key steps include data preprocessing, feature engineering, and model evaluation using different algorithms such as Linear Regression and Random Forests.
@@ -38,3 +40,11 @@ In this section, we explore the dataset used for predicting flight prices.
 - The dataset used in this project can be found on [Kaggle](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).
 - Overview of dataset features and their relevance to flight price prediction.
 - Visualizations (e.g., histograms, scatter plots) highlighting key insights from the data.
+
+## Model Comparison
+
+| Model                | Mean Absolute Error (₹) | Mean Absolute Error (USD)   | R-squared Score |
+|----------------------|-------------------------|-----------------------------|-----------------|
+| Linear Regression    | ₹4499.0                 | ≈ $63                       | 0.91            |
+| Random Forest        | ₹1076.4                 | ≈ $13                       | 0.98            |
+
