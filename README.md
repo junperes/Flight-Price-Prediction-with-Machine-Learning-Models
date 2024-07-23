@@ -33,27 +33,10 @@ This project aims to predict flight prices using various machine learning algori
     - `RandomForestRegressor` for fitting a random forest regression model.
     - Evaluation metrics: `mean_absolute_error`, `mean_squared_error`, `r2_score`.
 
-## Data Exploration
+## Take a Quick Look at the Data Structure
 In this section, we explore the dataset used for predicting flight prices,  sourced from [Kaggle](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).
 
-### Overview of the Dataset
-
-|   Unnamed: 0 | airline   | flight | source_city | departure_time | stops | arrival_time | destination_city | class    |   duration |   days_left |   price |
-|--------------|-----------|--------|-------------|----------------|-------|--------------|------------------|----------|------------|-------------|---------|
-|            0 | SpiceJet  | SG-8709 | Delhi       | Evening        | zero  | Night        | Mumbai           | Economy  |       2.17 |           1 |    5953 |
-|            1 | SpiceJet  | SG-8157 | Delhi       | Early_Morning  | zero  | Morning      | Mumbai           | Economy  |       2.33 |           1 |    5953 |
-|            2 | AirAsia   | I5-764  | Delhi       | Early_Morning  | zero  | Early_Morning| Mumbai           | Economy  |       2.17 |           1 |    5956 |
-|            3 | Vistara   | UK-995  | Delhi       | Morning        | zero  | Afternoon    | Mumbai           | Economy  |       2.25 |           1 |    5955 |
-|            4 | Vistara   | UK-963  | Delhi       | Morning        | zero  | Morning      | Mumbai           | Economy  |       2.33 |           1 |    5955 |
-|         ...  | ...       | ...    | ...         | ...            | ...   | ...          | ...              | ...      |       ...  |         ... |    ...  |
-
-### Dropping Unnecessary Columns
-In the dataset, we identified two columns that do not contribute to the prediction and can be dropped:
-- **Unnamed: 0**: This column appears to be an artifact of indexing and can be safely removed.
-- **flight**: Since the flight numbers are specific identifiers and are not expected to influence the prediction, we will drop this column as well.
-
-### Checking for Missing Values
-By using `df.isnull().sum()`, we confirm that the dataset contains no missing values, ensuring a complete dataset for analysis and modeling purposes.
+The data_exploration.ipynb notebook provides an overview of the dataset, including data cleaning, descriptive statistics, and visualizations. Key steps involve handling missing values, summarizing features, and exploring feature relationships through plots and correlation matrices to prepare the data for further analysis.
 
 ## Model Comparison
 
