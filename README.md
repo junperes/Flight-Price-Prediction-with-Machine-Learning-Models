@@ -33,10 +33,10 @@ This project aims to predict flight prices using various machine learning algori
     - `RandomForestRegressor` for fitting a random forest regression model.
     - Evaluation metrics: `mean_absolute_error`, `mean_squared_error`, `r2_score`.
 
-## Take a Quick Look at the Data Structure
+## Data Exploration
 In this section, we explore the dataset used for predicting flight prices,  sourced from [Kaggle](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction).
 
-The data_exploration.ipynb notebook provides an overview of the dataset, including data cleaning, descriptive statistics, and visualizations. Key steps involve handling missing values, summarizing features, and exploring feature relationships through plots and correlation matrices to prepare the data for further analysis.
+The **data_exploration.ipynb** notebook provides an overview of the dataset, including data cleaning, descriptive statistics, and visualizations. Key steps involve handling missing values, summarizing features, and exploring feature relationships through plots and correlation matrices to prepare the data for further analysis.
 
 ## Model Comparison
 
